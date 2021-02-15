@@ -21,6 +21,7 @@ docker run -it \
   -e AWS_ACCESS_KEY_ID="<AWS key>" \
   -e AWS_SECRET_ACCESS_KEY="<AWS secret>" \
   -e AWS_DEFAULT_REGION="us-east-1" \
+  -v $(pwd)/.kube/config:~/.kube/config
   jshimko/kube-tools-aws:latest
 
 # the above command drops into a bash shell with
